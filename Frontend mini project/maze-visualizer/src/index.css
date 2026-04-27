@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f7fa;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-content: center;
+}
+
+.maze-box {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(21, 18px);
+  justify-content: center;
+}
+
+.cell {
+  width: 18px;
+  height: 18px;
+}
+
+.wall { background: black; }
+.visited { background: lightblue; }
+.path { background: yellow; }
+.start { background: green; }
+.goal { background: red; }
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+}
+
+.metrics {
+  margin-top: 20px;
+}
